@@ -19,11 +19,10 @@ let data = {
     }
   };
 
-createTree(container, data);
 
-function createTree(){
+function createTree(container, data){
 
-
-
-
+container.innerHTML = createTree(data);
 }
+
+createTree(container, data);
