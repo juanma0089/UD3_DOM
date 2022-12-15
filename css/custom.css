@@ -9,4 +9,31 @@
     color: yellow;
   }
 
-  
+/* ejercicio 23 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+/* ocultamos la lista */
+.menu ul {
+  display: none;
+}
+/* al pasar el puntero por el título cambiamos al puntero con el dedo*/
+.titulo {
+  cursor: pointer;
+}
+/*Colocamos el icono delante del título antes de abrirlo*/
+.menu .titulo::before {
+  content: '▶ ';
+  font-family: \F231;
+  font-size: 90%;
+  color: green;
+}
+/*Una vez abierto colocamos este otro delante*/
+.menu.open .titulo::before {
+  content: '▼ ';
+}
+
+/*Hacemos aparecer la lista*/
+.open ul {
+  display: block;
+}
+
