@@ -9,7 +9,7 @@
     color: yellow;
   }
 
-/* ejercicio 23 */
+/*!ejercicio 23 */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
 /* ocultamos la lista */
@@ -37,3 +37,24 @@
   display: block;
 }
 
+/*!ejercicio 24*/
+.texto {
+  background: #edf5e1;
+  padding: 10px 20px 10px;
+  border-top: solid 1px #bae47c;
+  position: relative;
+}
+
+.btnCerrar {
+  position: absolute;
+  font-size: 110%;
+  top: 0;
+  color: rgb(238, 10, 10);
+  right: 10px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
