@@ -49,7 +49,7 @@ for (let cabecera of columnas){
         //*sino seleccionamos la otra columna que sería el segundo hijo de tr
         let nombreColum = Array.from(document.querySelectorAll('tr td:nth-child(2)'));
 
-        //*ordenamos por abecedario
+        //*ordenamos por orden alfabético
         cabecera.addEventListener('click', function(){
             nombreColum.sort((a, b) => a.textContent.localeCompare(b.textContent));
            
