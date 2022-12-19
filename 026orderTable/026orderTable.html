@@ -1,0 +1,69 @@
+<!-- 026orderTable.html/.js: Haz que la tabla se pueda ordenar: los clics en elementos <th> 
+deberían ordenarla por la columna correspondiente. Cada <th> tiene su tipo de datos 
+en el atributo, como esto:
+<table id="grid">
+  <thead>
+    <tr>
+      <th data-type="number">Age</th>
+      <th data-type="string">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Ann</td>
+    </tr>
+    ...
+  </tbody>
+</table>
+En el ejemplo anterior la primera columna tiene números y la segunda cadena. La 
+función de ordenamiento debe manejar el orden de acuerdo con el tipo de dato.
+Solamente los tipos "string" y "number" deben ser soportados. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script defer src="./js/bootstrap.bundle.js"></script>
+    <script defer src="/026orderTable/026orderTable.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <table id="grid" class="table-bordered" >
+            <thead>
+              <tr>
+                <th data-type="number" role="button">Age</th>
+                <th data-type="string" role="button">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28</td>
+                    <td>Olga</td>
+                  </tr>
+              <tr>
+                <td>10</td>
+                <td>John</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Ann</td>
+              </tr>
+              <tr>
+                <td>33</td>
+                <td>Juanma</td>
+              </tr>
+            </tbody>
+        </table>  
+    </div>
+</body>
+</html>
