@@ -1,0 +1,36 @@
+<!-- 029selectListItems.html/.js: Cree una lista donde los elementos son seleccionables, 
+como en los administradores de archivos. Un clic en un elemento de la lista selecciona 
+solo ese elemento (agrega la clase .selected), deselecciona todos los demás.
+Si se hace un clic con Ctrl (Cmd para Mac), el estado seleccionado/deseleccionado 
+cambia para ese solo elemento, los otros elementos no se modifican.
+PD: Para esta tarea, podemos suponer que los elementos de la lista son solo de texto. 
+No hay etiquetas anidadas.  Evita la selección nativa del navegador del texto en los 
+clics. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script defer src="./js/bootstrap.bundle.js"></script>
+    <script defer src="/029selectListItems/029selectListItems.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class=" container d-flex justify-content-center">
+        <div  class=" mt-5 pt-3">
+            <p>Haz click en un elemento de la lista para seleccionarlo</p>
+            <ul id="lista" class=" mt-3">
+                <li role="button">Christopher Robin</li>
+                <li role="button">Winnie-the-Pooh</li>
+                <li role="button">Tigger</li>
+                <li role="button">Kanga</li>
+                <li role="button">Rabbit. Just rabbit.</li>
+              </ul>
+        </div>
+    </div>
+</body>
+</html>
