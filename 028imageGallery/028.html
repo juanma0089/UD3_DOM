@@ -12,8 +12,16 @@ cambia al hacer clic en una miniatura. Como en Amazon, por ejemplo. -->
     <script defer src="./js/bootstrap.bundle.js"></script>
     <script defer src="/028imageGallery/028imageGallery.js"></script>
     <title>Document</title>
+   
 </head>
-<body>
-    
+<body >
+    <div class="container fotoPrincipal d-flex justify-content-center aling mt-2 p-0">
+            <img src="/img/joker1Big.png" id="main-image">
+    </div>
+    <div class="container fotoSecundaria d-flex justify-content-center aling mt-2 p-0">
+        <img src="/img/joker1Big.png" onclick="galeria('main-image', this.src)">
+        <img src="/img/joker2Big.png" onclick="galeria('main-image', this.src)">
+        <img src="/img/Joker3Big.png" onclick="galeria('main-image', this.src)">
+    </div>
 </body>
 </html>

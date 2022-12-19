@@ -58,3 +58,15 @@
   background: transparent;
   cursor: pointer;
 }
+
+/*!ejercicio 28*/
+
+.fotoPrincipal {
+  width: 440px;
+  height: 564px;
+}
+
+.fotoSecundaria {
+  width: 180px;
+  height: 200px;
+}
