@@ -1,11 +1,13 @@
-<!-- 27returnFalse.html/.js:¿Por qué en el código de abajo return false no funciona?
-<script>
-  function handler() {
-    alert( "..." );
-    return false;
-  }
-</script>
-<a href="https://w3.org" onclick="handler()">el navegador irá a w3.org</a> -->
+<!-- 030shortOuts.html/.js: Crea una función runOnKeys(func, code1, code2, ... code_n) 
+que ejecute func al presionar simultáneamente las teclas con códigos code1, code2, ..., 
+code_n.
+Por ejemplo, el siguiente código muestra un alert cuando "Q" y "W" se presionan 
+juntas (en cualquier lenguaje, con o sin mayúscula)
+runOnKeys(
+  () => alert("¡Hola!"),
+  "KeyQ",
+  "KeyW"
+); -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +18,10 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
     <script defer src="/js/bootstrap.bundle.js"></script>
-    <script defer src="/027returnFalse/027returnFalse.js"></script>
+    <script defer src="/030shortOuts/030shortOuts.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <a href="https://w3.org" onclick="handler()">el navegador irá a w3.org</a>
+    
 </body>
 </html>
