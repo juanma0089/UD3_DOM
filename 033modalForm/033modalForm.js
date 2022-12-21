@@ -28,3 +28,4 @@ inputEnviado.addEventListener('click', function(){
     } 
 });
 
+//*Que si que he hecho lo que me ha salido de ahí, ya lo se :P
